@@ -10,7 +10,7 @@ import sys
 
 # Load YOLOv5 model
 sys.path.append('yolov5')  # path to yolov5 folder
-model = torch.hub.load('yolov5', 'yolov5s', source='local')  # Use yolov5s model
+model = torch.hub.load('ultralytics/yolov5', 'yolov5s')
 
 st.set_page_config(page_title="YOLO Object Detection", layout="centered")
 st.title("🖼️ YOLO Object Detection App")
